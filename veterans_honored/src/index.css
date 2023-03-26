@@ -1,0 +1,70 @@
+* {
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "Tirto Writter";
+  src: url("./fonts/TirtoWritter-Regular.eot");
+  src: url("./fonts/TirtoWritter-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/TirtoWritter-Regular.woff2") format("woff2"),
+    url("./fonts/TirtoWritter-Regular.woff") format("woff"),
+    url("./fonts/TirtoWritter-Regular.ttf") format("truetype"),
+    url("./fonts/TirtoWritter-Regular.svg#TirtoWritter-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "regular", Tirto Writter, "basic";
+  font-size: 16px;
+  background-image: url(./img/flag_ribbons.jpg);
+  color: white;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.a {
+  color: var rgb(249, 251, 251);
+  text-decoration: wavy;
+}
+link {
+  color: white;
+}
+#contact-form {
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn .btn-primary .border .border-rounded {
+  align-content: right !important;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  color: aliceblue;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 1 1 5px white;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: url(./img/images.jfif);
+  background-color: blue;
+  border-radius: 10px;
+}
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}

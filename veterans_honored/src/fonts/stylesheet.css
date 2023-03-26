@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Tirto Writter";
+  src: url("TirtoWritter-Regular.eot");
+  src: url("TirtoWritter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("TirtoWritter-Regular.woff2") format("woff2"),
+    url("TirtoWritter-Regular.woff") format("woff"),
+    url("TirtoWritter-Regular.ttf") format("truetype"),
+    url("TirtoWritter-Regular.svg#TirtoWritter-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
