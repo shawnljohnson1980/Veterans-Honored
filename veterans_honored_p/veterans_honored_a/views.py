@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,HttpResponse
 from django.contrib.auth.models import User, Group
 from rest_framework import permissions
 from .serializers import UserSerializer, GroupSerializer
@@ -21,5 +21,5 @@ class GroupViewSet(Group):
     serializer_class = GroupSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-
-    
+def index(request):
+    return HttpResponse('Hello World')

@@ -50,6 +50,8 @@ class Member(models.Model):
     last_name = models.CharField(max_length=45)
     email = models.EmailField(max_length=100)
     dob= models.DateField(editable=True)
+    user = models.OneToOneField("User", verbose_name=("user_member"), on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     objects = MemberManager()
+    

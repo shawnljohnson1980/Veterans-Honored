@@ -9,5 +9,6 @@ router.register(r'groups', views.GroupViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    path('users',views.UserViewSet)
+    path('users',views.UserViewSet),
+    path('',views.index)
 ]
