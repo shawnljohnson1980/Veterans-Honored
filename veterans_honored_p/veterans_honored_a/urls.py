@@ -1,15 +1,8 @@
 from django.urls import include, path
-from rest_framework import routers
-from .import views
+from  .views import get_users, get_members
 
-
-
-router = routers.SimpleRouter()
-# Wire up our API using automatic URL routing.
-# Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    path('',views.index),
-    path('',views.get_users),
-    path('',views.get_members),
+    path('users/',get_users),
+    path('members/',get_members),
 
 ]

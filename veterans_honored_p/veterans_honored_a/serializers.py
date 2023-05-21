@@ -2,16 +2,12 @@
 from .models import User, Member
 from rest_framework import serializers
 
-
-
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class User_Serializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['url', 'username', 'email', 'groups','first_name','last_name', 'password','dob',]
+        fields = ['__all__']
 
-
-class MemberSerializer(serializers.HyperlinkedModelSerializer):
+class Member_Serializer(serializers.ModelSerializer):
     class Meta:
         model = Member
-        fields = ['url', 'username','first_name','last_name', 'password','dob','email','groups']
-        
+        fields = ['__all__']
