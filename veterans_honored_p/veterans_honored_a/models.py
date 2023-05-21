@@ -1,5 +1,6 @@
 from django.db import models
 import re
+
 # Create your models here.
 class UserManager(models.Manager):
     def user_validator(self, post_data):
@@ -44,7 +45,8 @@ class MemberManager(models.Manager):
             errors['first_name_length'] = 'first name should be at least 2 characters long, and no longer than 45 characters in length.'
         if len(post_data['last_name']) < 2 or len(post_data['last_name']) > 45:
             errors['last_name_length'] = 'last name should be at least 2 characters long, and no longer than 45 characters in length.'
-        
+        return errors
+    
 class Member(models.Model):
     first_name = models.CharField(max_length=45)
     last_name = models.CharField(max_length=45)
@@ -54,4 +56,5 @@ class Member(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     objects = MemberManager()
+    
     
